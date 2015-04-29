@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Pacdot : MonoBehaviour {
-	//var count=0.0;
+	int count=0;
 	//var ScoreText = "Points: 0";
 	void OnTriggerEnter2D (Collider2D other)
 	{

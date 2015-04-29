@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PacmanMove : MonoBehaviour {
 
-	public float speed = 0.4f;
+	public float speed = 0.8f;
 	Vector2 dest = Vector2.zero;
 	void Start () {
 		dest = transform.position;
@@ -11,8 +11,7 @@ public class PacmanMove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		Vector2 p = Vector2.MoveTowards(transform.position, dest, speed);
-		GetComponent<Rigidbody2D>().MovePosition(p);
+
 		
 		// Check for Input if not moving
 		if ((Vector2)transform.position == dest) {
@@ -25,9 +24,9 @@ public class PacmanMove : MonoBehaviour {
 			if (Input.GetKey(KeyCode.LeftArrow) && valid(-Vector2.right))
 				dest = (Vector2)transform.position - Vector2.right;
 		}
-		Vector2 dir = dest - (Vector2)transform.position;
-		GetComponent<Animator>().SetFloat("DirX", dir.x);
-		GetComponent<Animator>().SetFloat("DirY", dir.y);
+		Vector2 p = Vector2.MoveTowards(transform.position, dest, speed);
+		GetComponent<Rigidbody2D>().MovePosition(p);
+
 
 	}
 
