@@ -2,18 +2,18 @@
 using System.Collections;
 
 public class Pacdot : MonoBehaviour {
-	int count=0;
-	//var ScoreText = "Points: 0";
+	public static int count=0;
+	//temp obj = new temp ();
 	void OnTriggerEnter2D (Collider2D other)
 	{
 
 		if (other.name == "pacman") 
 		{
-			//Debug.Log ("here!");
+
 			count++;
-			//Debug.Log (count);
-			//ScoreText = "Points: " + count;
+			Debug.Log(count);
 			Destroy (gameObject);
+
 		}
 
 	}
