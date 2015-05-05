@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\GhostMovement.cs" />
+     <Compile Include="Assets\MainSC.cs" />
      <Compile Include="Assets\Pacdot.cs" />
      <Compile Include="Assets\PacmanMove.cs" />
  <Reference Include="UnityEngine.UI">

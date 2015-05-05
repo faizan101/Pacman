@@ -8,6 +8,7 @@ public class GhostMovement : MonoBehaviour {
 	
 	public float speed = 0.3f;
 	// Use this for initialization
+
 	void Start () {
 	
 	}
@@ -29,7 +30,9 @@ public class GhostMovement : MonoBehaviour {
 		}
 
 	void OnTriggerEnter2D(Collider2D co) {
-		if (co.name == "pacman")
-			Destroy(co.gameObject);
+		if (co.name == "pacman") {
+			Destroy (co.gameObject);
+
+		}
 	}
 }
