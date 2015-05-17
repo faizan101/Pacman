@@ -11,7 +11,7 @@ public class Pacdot : MonoBehaviour {
 		if (other.name == "pacman") 
 		{
 			score++;
-			Debug.Log(score);
+			//Debug.Log(score);
 			Destroy (gameObject);
 			//AddScore(score);
 
