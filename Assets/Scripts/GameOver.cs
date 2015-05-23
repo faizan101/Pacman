@@ -3,6 +3,10 @@ using System.Collections;
 
 public class GameOver : MonoBehaviour {
 
+	void Start()
+	{
+		temp ();
+	}
 	// Use this for initialization
 	void OnGUI () {
 		
@@ -16,4 +20,10 @@ public class GameOver : MonoBehaviour {
 			Application.Quit();
 		}
 	}
+	void temp()
+	{
+		GetComponent<AudioSource>().loop = true; 
+		GetComponent<AudioSource>().Play();
+	}
+
 }

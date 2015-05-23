@@ -3,7 +3,14 @@ using System.Collections;
 
 public class MainSC : MonoBehaviour {
 	public string FirstLevel1;
+
+
 	// Use this for initialization
+	void Start()
+	{
+		temp ();
+	}
+
 	void OnGUI () {
 
 		if(GUI.Button(new Rect(200,210,120,30), "Start")) {
@@ -13,4 +20,11 @@ public class MainSC : MonoBehaviour {
 			Application.Quit();
 		}
 	}
+	void temp()
+	{
+		GetComponent<AudioSource>().loop = true; 
+		GetComponent<AudioSource>().Play();
+	}
+
+
 }
