@@ -7,6 +7,7 @@ public class Collision : MonoBehaviour {
 	static int Lives=3;
 	//static bool canmove=true;
 	public GameObject[] enemies;
+	public GameObject[] Life;
 	EnemyAI temp;
 	GhostMovement temp1;
 	// Use this for initialization
@@ -16,14 +17,27 @@ public class Collision : MonoBehaviour {
 
 	void OnGUI()
 	{
-		GUI.Label (new Rect (360, 12, 120, 50), "Lives:");
-		GUI.Label (new Rect (410, 12, 120, 50), Lives.ToString ());
+
 	}
 	// Update is called once per frame
 	void OnTriggerEnter2D(Collider2D co) {
 		if (co.name == "pacman") {
 			//Destroy (co.gameObject);
-			Lives--;
+			if(Lives==3)
+			{
+				Lives--;
+				Destroy(Life[0]);
+			}
+			else if(Lives==2)
+			{
+				Lives--;
+				Destroy(Life[1]);
+			}
+			else
+			{
+				Lives--;
+				Destroy(Life[2]);
+			}
 			StartCoroutine(MyMethod());
 			temp = enemies[0].GetComponent<EnemyAI>();
 			temp.cur=0;
