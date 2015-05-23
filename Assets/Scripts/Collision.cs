@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class Collision : MonoBehaviour {
 
-	static int Lives=3;
+	static int Lives;
 	//static bool canmove=true;
 	public GameObject[] enemies;
 	public GameObject[] Life;
@@ -12,7 +12,7 @@ public class Collision : MonoBehaviour {
 	GhostMovement temp1;
 	// Use this for initialization
 	void Start () {
-	
+		Lives=3;
 	}
 
 	void OnGUI()
@@ -37,6 +37,10 @@ public class Collision : MonoBehaviour {
 			{
 				Lives--;
 				Destroy(Life[2]);
+			}
+			if(Lives==0)
+			{
+				Application.LoadLevel("GameOver");
 			}
 			StartCoroutine(MyMethod());
 			temp = enemies[0].GetComponent<EnemyAI>();
