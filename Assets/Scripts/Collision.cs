@@ -26,8 +26,8 @@ public class Collision : MonoBehaviour {
 			StartCoroutine(MyMethod());
 			temp = enemies[0].GetComponent<EnemyAI>();
 			temp.cur=0;
-			//temp = enemies[1].GetComponent<EnemyAI>();
-			//temp.cur=0;
+			temp = enemies[1].GetComponent<EnemyAI>();
+			temp.cur=0;
 			//temp = enemies[2].GetComponent<EnemyAI>();
 			//temp.cur=0;
 			//temp = enemies[3].GetComponent<EnemyAI>();
@@ -48,8 +48,8 @@ public class Collision : MonoBehaviour {
 		a.x = 16.5f; a.y = -15f;
 		enemies [0].transform.position = a;
 		//pinky
-		//a.x = 13.5f; a.y = -15f;
-		//enemies [1].transform.position = a;
+		a.x = 13.5f; a.y = -15f;
+		enemies [1].transform.position = a;
 		//clyde
 		//a.x = 15f; a.y = -15f;
 		//enemies [2].transform.position = a;
@@ -69,8 +69,8 @@ public class Collision : MonoBehaviour {
 		Debug.Log ("Here");
 		temp = enemies[0].GetComponent<EnemyAI>();
 		temp.canmove1=false;
-		//temp = enemies[1].GetComponent<EnemyAI>();
-		//temp.canmove1=false;
+		temp = enemies[1].GetComponent<EnemyAI>();
+		temp.canmove1=false;
 		//temp = enemies[2].GetComponent<EnemyAI>();
 		//temp.canmove1=false;
 		//temp = enemies[3].GetComponent<EnemyAI>();
@@ -81,6 +81,9 @@ public class Collision : MonoBehaviour {
 		Restart ();
 		yield return new WaitForSeconds(4);
 		temp = enemies[0].GetComponent<EnemyAI>();
+		temp.canmove1=true;
+		temp.canmove = true;
+		temp = enemies[1].GetComponent<EnemyAI>();
 		temp.canmove1=true;
 		temp.canmove = true;
 		//temp = enemies[1].GetComponent<EnemyAI>();
