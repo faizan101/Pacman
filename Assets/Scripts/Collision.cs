@@ -8,6 +8,7 @@ public class Collision : MonoBehaviour {
 	//static bool canmove=true;
 	public GameObject[] enemies;
 	EnemyAI temp;
+	GhostMovement temp1;
 	// Use this for initialization
 	void Start () {
 	
@@ -28,10 +29,10 @@ public class Collision : MonoBehaviour {
 			temp.cur=0;
 			temp = enemies[1].GetComponent<EnemyAI>();
 			temp.cur=0;
-			//temp = enemies[2].GetComponent<EnemyAI>();
-			//temp.cur=0;
-			//temp = enemies[3].GetComponent<EnemyAI>();
-			//temp.cur=0;
+			temp1 = enemies[2].GetComponent<GhostMovement>();
+			temp1.cur=0;
+			temp1 = enemies[3].GetComponent<GhostMovement>();
+			temp1.cur=0;
 		}
 		//Destroy(target);
 		/*if (co.name == "wayPoint") {
@@ -51,14 +52,14 @@ public class Collision : MonoBehaviour {
 		a.x = 13.5f; a.y = -15f;
 		enemies [1].transform.position = a;
 		//clyde
-		//a.x = 15f; a.y = -15f;
-		//enemies [2].transform.position = a;
+		a.x = 15f; a.y = -15f;
+		enemies [2].transform.position = a;
 		//inky
-		//a.x = 12.5f; a.y = -15f;
-		//enemies [3].transform.position = a;
+		a.x = 12.5f; a.y = -15f;
+		enemies [3].transform.position = a;
 		//pacman
-		//a.x = 15f; a.y = -30f;
-		//enemies [4].transform.position = a;
+		a.x = 15f; a.y = -30f;
+		enemies [4].transform.position = a;
 
 		
 		//cur = 0;
@@ -71,25 +72,26 @@ public class Collision : MonoBehaviour {
 		temp.canmove1=false;
 		temp = enemies[1].GetComponent<EnemyAI>();
 		temp.canmove1=false;
-		//temp = enemies[2].GetComponent<EnemyAI>();
-		//temp.canmove1=false;
-		//temp = enemies[3].GetComponent<EnemyAI>();
-		//temp.canmove1=false;
+		temp1 = enemies[2].GetComponent<GhostMovement>();
+		temp1.canmove=false;
+		temp1 = enemies[3].GetComponent<GhostMovement>();
+		temp1.canmove=false;
 		Restart();
 
 		yield return new WaitForSeconds(0.5f);
 		Restart ();
-		yield return new WaitForSeconds(4);
+		yield return new WaitForSeconds(3.5f);
 		temp = enemies[0].GetComponent<EnemyAI>();
 		temp.canmove1=true;
 		temp.canmove = true;
 		temp = enemies[1].GetComponent<EnemyAI>();
 		temp.canmove1=true;
 		temp.canmove = true;
-		//temp = enemies[1].GetComponent<EnemyAI>();
-		//temp.canmove1=true;
-		//temp = enemies[2].GetComponent<EnemyAI>();
-		//temp.canmove1=true;
+		/////////////////////////////////////////////////
+		temp1 = enemies[2].GetComponent<GhostMovement>();
+		temp1.canmove=true;
+		temp1 = enemies[3].GetComponent<GhostMovement>();
+		temp1.canmove=true;
 		//temp = enemies[3].GetComponent<EnemyAI>();
 		//temp.canmove1=true;
 	}

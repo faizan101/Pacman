@@ -1,9 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\Version1\PacmanTemp\Assets\Scripts\EnemyAI.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\EnemyAI.cs">
     <Files>
-      <File FileName="..\..\Version1\PacmanTemp\Assets\Scripts\EnemyAI.cs" Line="122" Column="13" />
-      <File FileName="..\..\Version1\PacmanTemp\Assets\Scripts\GhostMovement.cs" Line="47" Column="4" />
+      <File FileName="Assets\Scripts\Collision.cs" Line="78" Column="23" />
+      <File FileName="Assets\Scripts\EnemyAI.cs" Line="68" Column="13" />
+      <File FileName="Assets\Scripts\PacmanMove.cs" Line="29" Column="57" />
+      <File FileName="Assets\Scripts\GhostMovement.cs" Line="11" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

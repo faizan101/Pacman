@@ -29,7 +29,7 @@ public class EnemyAI : MonoBehaviour {
 	public bool canmove1=true;
 	[HideInInspector]
 	public int cur = 0;
-	int Lives=3;
+//	int Lives=3;
 	//EnemyAI temp;
 	//public GameObject[] enemies;
 	//********************************************************************************
