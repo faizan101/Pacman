@@ -8,39 +8,40 @@ public class Collision : MonoBehaviour {
 	//static bool canmove=true;
 	public GameObject[] enemies;
 	public GameObject[] Life;
+	public GameObject DeathGo;
 	EnemyAI temp;
 	GhostMovement temp1;
 	// Use this for initialization
 	void Start () {
 		Lives=3;
 	}
-
-	void OnGUI()
-	{
-
-	}
+	
 	// Update is called once per frame
 	void OnTriggerEnter2D(Collider2D co) {
+		Vector2 a=transform.position;
 		if (co.name == "pacman") {
 			//Destroy (co.gameObject);
 			if(Lives==3)
 			{
 				Lives--;
 				Destroy(Life[0]);
+				PlayDeath();
 			}
 			else if(Lives==2)
 			{
 				Lives--;
 				Destroy(Life[1]);
+				PlayDeath();
 			}
 			else
 			{
 				Lives--;
 				Destroy(Life[2]);
+				PlayDeath();
 			}
 			if(Lives==0)
 			{
-				Application.LoadLevel("GameOver");
+				StartCoroutine(Level());
 			}
 			StartCoroutine(MyMethod());
 			temp = enemies[0].GetComponent<EnemyAI>();
@@ -76,7 +77,7 @@ public class Collision : MonoBehaviour {
 		a.x = 12.5f; a.y = -15f;
 		enemies [3].transform.position = a;
 		//pacman
-		a.x = 15f; a.y = -30f;
+		a.x = 150f; a.y = -30f;
 		enemies [4].transform.position = a;
 
 		
@@ -99,6 +100,10 @@ public class Collision : MonoBehaviour {
 		yield return new WaitForSeconds(0.5f);
 		Restart ();
 		yield return new WaitForSeconds(3.5f);
+		Vector2 a=transform.position;
+		a.x = 15f; a.y = -30f;
+		enemies [4].transform.position = a;
+
 		temp = enemies[0].GetComponent<EnemyAI>();
 		temp.canmove1=true;
 		temp.canmove = true;
@@ -112,5 +117,19 @@ public class Collision : MonoBehaviour {
 		temp1.canmove=true;
 		//temp = enemies[3].GetComponent<EnemyAI>();
 		//temp.canmove1=true;
+	}
+
+	void PlayDeath()
+	{
+		GameObject Death = (GameObject)Instantiate (DeathGo);
+		Death.transform.position = enemies [4].transform.position;
+		GetComponent<AudioSource> ().Play ();
+	}
+
+	IEnumerator Level()
+	{
+		yield return new WaitForSeconds(2f);
+		Application.LoadLevel("GameOver");
+
 	}
 }
