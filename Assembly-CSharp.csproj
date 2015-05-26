@@ -124,6 +124,7 @@
      <Compile Include="Assets\Scripts\EnemyAI.cs" />
      <Compile Include="Assets\Scripts\GameOver.cs" />
      <Compile Include="Assets\Scripts\GhostMovement.cs" />
+     <Compile Include="Assets\Scripts\Grapes.cs" />
      <Compile Include="Assets\Scripts\MainSC.cs" />
      <Compile Include="Assets\Scripts\Pacdot.cs" />
      <Compile Include="Assets\Scripts\PacmanMove.cs" />
