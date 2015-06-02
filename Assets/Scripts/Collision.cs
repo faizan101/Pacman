@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class Collision : MonoBehaviour {
-
+	
 	static int Lives;
 	//static bool canmove=true;
 	public GameObject[] enemies;
@@ -79,7 +79,7 @@ public class Collision : MonoBehaviour {
 		//pacman
 		a.x = 150f; a.y = -30f;
 		enemies [4].transform.position = a;
-
+		
 		
 		//cur = 0;
 		
@@ -96,14 +96,14 @@ public class Collision : MonoBehaviour {
 		temp1 = enemies[3].GetComponent<GhostMovement>();
 		temp1.canmove=false;
 		Restart();
-
+		
 		yield return new WaitForSeconds(0.5f);
 		Restart ();
 		yield return new WaitForSeconds(3.5f);
 		Vector2 a=transform.position;
 		a.x = 15f; a.y = -30f;
 		enemies [4].transform.position = a;
-
+		
 		temp = enemies[0].GetComponent<EnemyAI>();
 		temp.canmove1=true;
 		temp.canmove = true;
@@ -118,18 +118,18 @@ public class Collision : MonoBehaviour {
 		//temp = enemies[3].GetComponent<EnemyAI>();
 		//temp.canmove1=true;
 	}
-
+	
 	void PlayDeath()
 	{
 		GameObject Death = (GameObject)Instantiate (DeathGo);
 		Death.transform.position = enemies [4].transform.position;
 		GetComponent<AudioSource> ().Play ();
 	}
-
+	
 	IEnumerator Level()
 	{
 		yield return new WaitForSeconds(2f);
 		Application.LoadLevel("GameOver");
-
+		
 	}
 }

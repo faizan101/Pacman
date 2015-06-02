@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Grapes.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="C:\Users\Muhammad\Desktop\Pacman-master\Pacman-master\Assets\Scripts\PlayerController.cs">
     <Files>
-      <File FileName="Assets\Scripts\BigDot.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Grapes.cs" Line="12" Column="3" />
+      <File FileName="C:\Users\Muhammad\Desktop\Pacman-master\Pacman-master\Assets\Scripts\UIScript.cs" Line="13" Column="2" />
+      <File FileName="C:\Users\Muhammad\Desktop\Pacman-master\Pacman-master\Assets\Scripts\PlayerController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

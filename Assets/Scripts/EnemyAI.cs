@@ -22,7 +22,7 @@ public class EnemyAI : MonoBehaviour {
 
 	//***************************************GhostMove********************************
 	public Transform[] waypoints;
-	int Range=4;
+	public int Range=4;
 	public float speed1 = 0.2f;
 	public bool canmove=true;
 	[HideInInspector]

@@ -9,10 +9,11 @@ public class PacmanMove : MonoBehaviour {
 
 	void Start () {
 		dest = transform.position;
-		
+
 	}
 	
 	void FixedUpdate () {
+
 	
 		if (Input.GetKey(KeyCode.UpArrow) && valid(Vector2.up))
 		{

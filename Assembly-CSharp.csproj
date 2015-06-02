@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{40DB70B5-49D0-D3BE-18D8-F28CBB156472}</ProjectGuid>
+	<ProjectGuid>{5A67E8CB-3FE0-A512-BDF0-1B9A6A64C03B}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -125,6 +125,14 @@
      <Compile Include="Assets\Scripts\GameOver.cs" />
      <Compile Include="Assets\Scripts\GhostMovement.cs" />
      <Compile Include="Assets\Scripts\Grapes.cs" />
+     <Compile Include="Assets\Scripts\Level1\BigDot1.cs" />
+     <Compile Include="Assets\Scripts\Level1\Collision1.cs" />
+     <Compile Include="Assets\Scripts\Level1\Death1.cs" />
+     <Compile Include="Assets\Scripts\Level1\EnemyAI1.cs" />
+     <Compile Include="Assets\Scripts\Level1\GhostMovement1.cs" />
+     <Compile Include="Assets\Scripts\Level1\Grapes1.cs" />
+     <Compile Include="Assets\Scripts\Level1\Pacdot1.cs" />
+     <Compile Include="Assets\Scripts\Level1\PacmanMove1.cs" />
      <Compile Include="Assets\Scripts\MainSC.cs" />
      <Compile Include="Assets\Scripts\Pacdot.cs" />
      <Compile Include="Assets\Scripts\PacmanMove.cs" />
@@ -144,10 +152,10 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Pathfinding.Ionic.Zip.Reduced">
- <HintPath>E:/VP Project/Pacman/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ <HintPath>E:/Version1/PacmanTemp/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
  </Reference>
  <Reference Include="Pathfinding.JsonFx">
- <HintPath>E:/VP Project/Pacman/Assets/AstarPathfindingProject/Plugins/JsonFx/Pathfinding.JsonFx.dll</HintPath>
+ <HintPath>E:/Version1/PacmanTemp/Assets/AstarPathfindingProject/Plugins/JsonFx/Pathfinding.JsonFx.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

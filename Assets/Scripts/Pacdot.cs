@@ -13,6 +13,9 @@ public class Pacdot : MonoBehaviour {
 
 		if (other.name == "pacman") 
 		{
+			if(score==327f){
+				Debug.LogError("max Score reached");
+				Application.LoadLevel("Level1");}
 			score++;
 			//Debug.Log(score);
 			Destroy (gameObject);
