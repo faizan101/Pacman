@@ -13,10 +13,10 @@ public class MainSC : MonoBehaviour {
 
 	void OnGUI () {
 
-		if(GUI.Button(new Rect(200,210,120,30), "Start")) {
+		if(GUI.Button(new Rect(80,210,120,30), "Start")) {
 			Application.LoadLevel(FirstLevel1);
 		}
-		if(GUI.Button(new Rect(200,250,120,30), "Exit")) {
+		if(GUI.Button(new Rect(80,250,120,30), "Exit")) {
 			Application.Quit();
 		}
 	}

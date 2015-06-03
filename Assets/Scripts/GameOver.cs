@@ -10,10 +10,10 @@ public class GameOver : MonoBehaviour {
 	// Use this for initialization
 	void OnGUI () {
 
-		if(GUI.Button(new Rect(600,210,120,30), "Main Menu")) {
+		if(GUI.Button(new Rect(115,310,120,30), "Main Menu")) {
 			Application.LoadLevel("MainMenu");
 		}
-		if(GUI.Button(new Rect(600,250,120,30), "Exit")) {
+		if(GUI.Button(new Rect(115,350,120,30), "Exit")) {
 			Application.Quit();
 		}
 	}

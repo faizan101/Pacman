@@ -28,8 +28,8 @@ public class Pacdot1 : MonoBehaviour {
 	
 	void OnGUI()
 	{
-		GUI.Label (new Rect (260, 12, 120, 50), "Score:");
-		GUI.Label (new Rect (310, 12, 120, 50), score.ToString ());
+		GUI.Label (new Rect (160, 80, 120, 50), "Score:");
+		GUI.Label (new Rect (210, 80, 120, 50), score.ToString ());
 	}
 	/*void AddScore(int newScore)
 	{

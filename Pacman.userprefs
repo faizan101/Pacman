@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="C:\Users\Muhammad\Desktop\Pacman-master\Pacman-master\Assets\Scripts\PlayerController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameOver.cs">
     <Files>
-      <File FileName="C:\Users\Muhammad\Desktop\Pacman-master\Pacman-master\Assets\Scripts\UIScript.cs" Line="13" Column="2" />
-      <File FileName="C:\Users\Muhammad\Desktop\Pacman-master\Pacman-master\Assets\Scripts\PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Pacdot.cs" Line="16" Column="20" />
+      <File FileName="Assets\Scripts\Level1\Pacdot1.cs" Line="32" Column="30" />
+      <File FileName="Assets\Scripts\GameOver.cs" Line="16" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
